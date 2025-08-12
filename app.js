@@ -75,7 +75,7 @@ mongoClient.connect(connectionUrl, (error, res1) => {
                                     // (9) Display the number of deleted document 
                                   users.deleteMany(
                                     { age: 41 },
-                                    (e10, r10) => { // ← خليه e10, r10
+                                    (e10, r10) => {
                                       if (e10) return console.log('Error deleting age=41')
                                       console.log('Deleted users with age = 41:', r10.deletedCount)
 
